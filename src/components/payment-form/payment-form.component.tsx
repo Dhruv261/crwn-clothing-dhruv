@@ -62,9 +62,9 @@ const PaymentForm = () => {
 
 
 
-    // setIsProcessingPayment(false);
-
     alert('Payment Successful!')
+    setIsProcessingPayment(false);
+
 
     // if (paymentResult.error) {
     //   alert(paymentResult.error);
