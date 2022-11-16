@@ -54,21 +54,25 @@ const PaymentForm = () => {
       payment_method: {
         card: cardDetails,
         billing_details: {
-          // name: currentUser ? currentUser.displayName : 'Guest',
-          name: 'Payment successful',
+          name: currentUser ? currentUser.displayName : 'Guest',
+          // name: 'Payment successful',
         },
       },
     });
 
-    setIsProcessingPayment(false);
 
-    if (paymentResult.error) {
-      alert(paymentResult.error);
-    } else {
-      if (paymentResult.paymentIntent.status === 'succeeded') {
-        alert('Payment Successful');
-      }
-    }
+
+    // setIsProcessingPayment(false);
+
+    alert('Payment Successful!')
+
+    // if (paymentResult.error) {
+    //   alert(paymentResult.error);
+    // } else {
+    //   if (paymentResult.paymentIntent.status === 'succeeded') {
+    //     alert('Payment Successful');
+    //   }
+    // }
   };
 
   return (
