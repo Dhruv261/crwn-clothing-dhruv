@@ -55,7 +55,6 @@ const PaymentForm = () => {
         card: cardDetails,
         billing_details: {
           name: currentUser ? currentUser.displayName : 'Guest',
-          // name: 'Payment successful',
         },
       },
     });
